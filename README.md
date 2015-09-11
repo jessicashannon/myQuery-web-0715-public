@@ -14,7 +14,7 @@ We'll be making these methods on a prototype called Library.  The creation of ne
 ```javascript
 function Library(elString){
   var selectedEl = this.getElement(elString);
-  // we use [0] because we want the selected items to be somewhat 
+  // we use [0] because we want the selected items to be somewhat
   // difficult to access so that users of our library do not use it against our intentions
   // 0 has no special meaning; it is just a property
   // we could have used anything like selectEl or selectedElephant

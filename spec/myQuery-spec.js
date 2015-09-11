@@ -1,7 +1,7 @@
 $(function(){
   describe('myQuery', function() {
     beforeEach(function() {
-      setFixtures('<html><head>' 
+      setFixtures('<html><head>'
         + '<script type="text/javascript" src="lib/myQuery.js"></script>'
         + '<title>This is a website!</title></head><body>'
         + '<h1>I\'m a header!</h1>'
@@ -46,7 +46,7 @@ $(function(){
     });
 
     it('should append an element to all selected elements with #append', function() {
-      var selectedElArr; 
+      var selectedElArr;
       myQuery('.pink').append('<span>Hello</span>');
       selectedElArr = document.getElementsByClassName('pink');
       expect(selectedElArr[0].lastChild.outerHTML).toEqual('<span>Hello</span>');
